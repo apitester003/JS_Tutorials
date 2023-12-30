@@ -1,0 +1,33 @@
+<script>
+    console.clear();
+
+    var mCar = {
+        "p1"        :   "350 kmph", 
+        "gallardo"  :   "320 kmph",
+        "veyron"    :   "409 kmph",
+        "aguiera"   :   "429 kmph"
+    }
+
+    console.log(mCar, typeof(mCar));
+
+    var Aquiera = {
+        name            :   "Aguiera", 
+        manufacturer    :   {
+            name        :   "Koenigsegg", 
+            location    :   "Sweden"
+        },
+        topSpeed        :   429, 
+        color           :   "Black", 
+        spoilers        :   false, 
+        applyBrakes     :   function(){
+            setTimeout(function(){
+                console.log("Car Stopped");
+            }, 5000)
+        }
+    }
+
+    console.log(Aquiera.name);
+    console.log(Aquiera.topSpeed);
+    console.log(Aquiera.manufacturer , Aquiera.manufacturer.name);
+    console.log(Aquiera.applyBrakes());
+</script>

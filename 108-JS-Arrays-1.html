@@ -1,0 +1,19 @@
+<script>
+    console.clear();
+
+    var mFriends = ["Chris", "Josh", "Matt", "Abraham"];
+    console.log(mFriends, typeof(mFriends));
+    console.log(mFriends[2]);
+
+    //Find array length 
+    console.log("Size of 'mFriends' array: " + mFriends.length);
+
+    //Ways to adan element to an array
+    mFriends[mFriends.length] = "Rob";
+    mFriends.push("Jack");
+    console.log(mFriends);
+
+    //Delete an element from an array (LIFO)
+    var deletedFriend = mFriends.pop();
+    console.log("Deleted Friend is: " + deletedFriend, ", and the updated List of friends: " + mFriends);
+</script>
